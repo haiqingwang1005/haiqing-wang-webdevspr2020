@@ -4,6 +4,7 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.use('/public', express.static(__dirname + '/public'));
+
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/welcome.html');
 });
@@ -28,7 +29,13 @@ app.get('/post1.html', function(req, res) {
     res.sendFile(__dirname + '/post1.html');
 });
 
+app.get('/post1_edit.html', function(req, res) {
+    res.sendFile(__dirname + '/post1_edit.html')
+});
 
+app.get('/post_create.html', function(req, res) {
+    res.sendFile(__dirname + '/post_create.html')
+});
 
 //app.get('/', function(request, response) {
 //  response.send('Hello World!')

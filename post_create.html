@@ -10,7 +10,7 @@
 <body>
 <nav class="navbar navbar-expand-lg navbar-dark bg-dark static-top">
     <div class="container">
-        <a class="navbar-brand" href="#">
+        <a class="navbar-brand" href="welcome.html">
             <img src="public/images/paw.png" alt="" class = "paw_img">
         </a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -53,6 +53,10 @@
                             <button class="dropdown-item" type="button" data-target="#add-video-modal" data-toggle="modal">
                                 <i class="fab fa-youtube">  Add Youtube</i>
                             </button>
+                            <button class="dropdown-item" type="button" data-target="#add-photo-modal" data-toggle="modal">
+                                <i class="fas fa-photo-video"></i>
+                                Add GIF
+                            </button>
                         </div>
                     </div>
                     <div class="card-body p-0">
@@ -64,10 +68,10 @@
             <div class="container mt-5">
                 <div class="row">
                     <div class="col-6">
-                        <a href="profile.html" role="button" class="btn btn-primary btn-block text-uppercase">Save</a>
+                        <a href="profile.html" role="button" class="btn btn-secondary btn-block text-uppercase">Save</a>
                     </div>
                     <div class="col-6">
-                        <a href="profile.html" role="button" class="btn btn-primary btn-block text-uppercase" style = "background-color:rgb(79, 79, 79)">Cancel</a>
+                        <a href="profile.html" role="button" class="btn btn-dark btn-block text-uppercase" style = "background-color:rgb(79, 79, 79)">Cancel</a>
                     </div>
 
                 </div>
@@ -96,8 +100,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Upload</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary">Upload</button>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>
@@ -116,8 +120,8 @@
                 <input class="form-control" type="text" placeholder="Video Link">
             </div>
             <div class="modal-footer">
-                <button type="button" class="btn btn-primary">Finish</button>
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-secondary">Finish</button>
+                <button type="button" class="btn btn-dark" data-dismiss="modal">Close</button>
             </div>
         </div>
     </div>

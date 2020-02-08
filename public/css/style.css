@@ -3,10 +3,15 @@
     --input-padding-y: 0.75rem;
 }
 
+.awesome_color {
+    color: black;
+}
+
 .profile-container {
     min-height: 70vh;
     margin-top: 12rem;
 }
+
 .post1-container {
     margin-top: 4rem;
 }
@@ -16,6 +21,7 @@
 .submitter_date {
     font-size: x-small;
 }
+
 .post-link {
     color: rgb(24,24,24);
     font-family: 'Roboto', sans-serif;
