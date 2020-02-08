@@ -31,7 +31,26 @@
     color: steelblue;
 }
 
+.btn-login {
+    color: ivory;
+    font-size: 5rem;
+}
+.btn-login:visited {
+    color: ivory;
+}
+.btn-login:hover {
+    color: ivory;
+}
 
+.small {
+    color: rgb(24,24,24);
+}
+.small:visited {
+    color: rgb(24,24,24);
+}
+.small:hover {
+    color: rgb(24,24,24);
+}
 
 .welcome,
 .carousel-item {
