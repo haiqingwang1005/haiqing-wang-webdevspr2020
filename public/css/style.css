@@ -54,7 +54,7 @@
     height: 20px;
 }
 .bg-image {
-    background-image: url("./images/4.jpeg");
+    background-image: url("../images/4.jpeg");
     background-size: cover;
     background-position: center;
 }
