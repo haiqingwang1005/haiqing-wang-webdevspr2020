@@ -4,7 +4,6 @@ var app = express();
 app.set('port', (process.env.PORT || 5000));
 
 app.use('/public', express.static(__dirname + '/public'));
-
 app.get('/', function(req, res) {
     res.sendFile(__dirname + '/welcome.html');
 });

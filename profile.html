@@ -44,7 +44,9 @@
     <div class="col-12">
         <div class="row justify-content-end">
             <div class="col-2 align-right">
-                <i class="fas fa-plus"></i>
+                <a href="post_create.html">
+                    <i class="fas fa-plus"></i>
+                </a>
             </div>
         </div>
 
@@ -59,8 +61,12 @@
                                 </div>
                             </td>
                             <td>
-                                <i class="fas fa-cogs"></i>
-                                <i class="far fa-trash-alt"></i>
+                                <a href="#permission-modal" data-toggle="modal">
+                                    <i class="fas fa-cogs"></i>
+                                </a>
+                                <a href="#delete-modal" data-toggle="modal">
+                                    <i class="far fa-trash-alt"></i>
+                                </a>
                             </td>
                         </tr>
                         <tr>
@@ -95,6 +101,51 @@
 <!-- /.container -->
 
 
+<div class="modal" role="dialog" id="permission-modal" tabindex="-2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title">Permission Management</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioPrivate" value="option1" checked>
+                    <label class="form-check-label" for="radioPrivate">
+                        Only I can view
+                    </label>
+                </div>
+                <div class="form-check">
+                    <input class="form-check-input" type="radio" name="exampleRadios" id="radioPublic" value="option2">
+                    <label class="form-check-label" for="radioPublic">
+                        Public to everyone
+                    </label>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Confirm</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal" role="dialog" id="delete-modal" tabindex="-2">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h4>Are you sure to delete this post?</h4>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary">Confirm</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
 
 </body>
 <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
